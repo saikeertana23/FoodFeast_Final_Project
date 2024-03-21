@@ -1,0 +1,137 @@
+/* .custom-navbar {
+    background-image: url('https://rayalaseemaruchulu.com/assets/images/cream-background.jpg'); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+}
+
+.container {
+    display: flex;
+  }
+  
+  .image-container {
+    position: relative;
+    margin-right: 10px;
+  }
+  
+  .image-container img {
+    width: 500px;
+    height: 200px;
+    cursor: pointer;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s linear;
+  }
+  
+  .image-container:hover .overlay {
+    visibility: visible;
+    opacity: 1;
+  }
+   */
+
+
+   .custom-navbar {
+    background-image: url('https://rayalaseemaruchulu.com/assets/images/cream-background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap; /* Enable wrapping */
+    justify-content: center; /* Center the content horizontally */
+    gap: 20px; /* Space between images */
+}
+
+.image-container {
+    position: relative;
+    margin-top: 40px;
+
+    margin-bottom: 40px; /* Space between images vertically */
+    flex: 0 1 calc(50% - 20px); /* Two images in a row, accounting for the gap */
+}
+
+.image-container img {
+    margin-left: 80px;
+    width: 450px;
+    height: 300px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    /* visibility: hidden; */
+    /* opacity: 0;
+    transition: visibility 0s, opacity 0.5s linear; */
+}
+
+.image-container:hover .overlay {
+    /* visibility: visible;
+    opacity: 1; */
+    /* border-radius: 20px; */
+    border: 2px solid white;
+
+}
+
+
+
+.custom-carousel {
+  width: 100vw; 
+  height: 100px; 
+}
+.order-now-btn {
+  position: relative;
+  text-align: center;
+ 
+ 
+}
+
+.order-now-btn:hover .white-box {
+  display: block;
+}
+
+.order-link {
+
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: transparent; 
+  border-color: #ffffff;
+  color: white;
+  text-decoration: none;
+  border: 1px solid white; 
+  border-radius: 5px;
+  transition: border-color 0.3s ease; 
+}
+
+.order-link:hover {
+  /* border-color: #ffffff; 
+  color: white;  */
+  border-radius: 25px;
+}
+
+
+.carousel-image{
+  height: 550px;
+}

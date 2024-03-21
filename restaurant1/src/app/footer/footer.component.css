@@ -1,0 +1,154 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    height: auto;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column; /* Ensure footer stays at the bottom */
+    min-height: 100vh; /* Ensure the page takes at least the height of the viewport */
+}
+body a {
+    text-decoration: none;
+    font-size: 15px;
+}
+body a:hover {
+    text-decoration: none;
+}
+.content {
+    flex: 1; /* Fill remaining vertical space */
+}
+footer {
+    color: black;
+    background-color: rgb(234, 226, 226);
+    padding: 30px 80px 20px;
+    text-align: center; 
+}
+footer a:focus {
+    color: rgb(91, 87, 87);
+    text-decoration: none;
+}
+.f-head {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 100px 20px;
+}
+.f-head h1 {
+    font-style: italic;
+    font-weight: bolder;
+    font-size: 35px;
+}
+.f-head2, .f-head2 .india {
+    display: flex;
+    align-items: center;
+}
+.lang select {
+    height: 30px;
+    width: 80px;
+    border: 0.5px solid grey;
+    border-radius: 5px;
+    text-align: center;
+    margin-left: 10px;
+}
+.f-main {
+    display: flex;
+    justify-content: space-evenly;
+}
+.about, .learn, .restaurant {
+    display: flex;
+    flex-direction: column;
+}
+.f-main h4 {
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+.about a, .learn a, .restaurant a {
+    color: rgb(91, 87, 87);
+    padding: 2px;
+}
+.about a:hover, .learn a:hover, .restaurant a:hover {
+    color: rgb(91, 87, 87);
+}
+.social a:hover {
+    color: white;
+}
+.fa {
+    padding: 8px;
+    text-align: center;
+    text-decoration: none;
+    margin: 2px;
+}
+.social a:focus {
+    color: white;
+    text-decoration: none;
+}
+/* .fa-linkedin {
+    background: #007bb5;
+    color: white;
+    border-radius: 50%;
+}
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+    width: 30px;
+    border-radius: 50%;
+}
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+    border-radius: 50%;
+}
+.fa-instagram {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    color: white;
+    border-radius: 50%;
+}
+.fa-youtube {
+    background: #bb0000;
+    color: white;
+    border-radius: 50%;
+} */
+
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-instagram {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    color: white;
+}
+
+.fa-youtube {
+    background: #bb0000;
+    color: white;
+}
+
+
+
+.social {
+    margin-top: 20px; /* Add some margin to separate from the links */
+}
+
+.social a {
+    display: inline-block;
+    padding: 10px; /* Increase padding to increase icon size */
+    text-align: center;
+    text-decoration: none;
+    margin: 5px; /* Add margin between icons */
+    border-radius: 50%; /* Make icons circular */
+    font-size: 20px; /* Increase icon size */
+}

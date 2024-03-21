@@ -1,0 +1,91 @@
+
+
+
+
+ 
+        <nav class="navbar navbar-expand-md navbar-white nav-width custom-navbar">
+
+            <div class="container-lg">
+                <a class="navbar-brand" href="/admin-page">
+                    <img src="assets/images/foodfeast2.png" alt="Your Logo" height="80" width="120">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" routerLink="/admin-page">Home</a>
+                        </li>
+                       
+                        <li class="nav-item">
+                            <a class="nav-link" routerLink="/add-product">Post Item</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" routerLink="/admin-products">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" routerLink="/clients">Clients</a>
+                        </li>
+                       
+                      
+                        
+                    </ul>
+                   
+        
+                         <form class="d-flex">
+                            <ul class="navbar-nav me-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link"  routerLink="/landing-page">Logout</a>
+                                </li>
+                            </ul>
+                        </form> 
+     
+                </div>
+            </div>
+        </nav>
+
+
+
+
+
+<h1 align="center">Food Items</h1>
+<br/>
+
+<div class="container" *ngIf="products">
+    <table class="table table-sm text-center table-hover table-bordered table-striped">
+        <thead class="bg-info">
+            <tr>
+                <th> Product Image </th>
+                <th> Product ID </th>
+                <th> Product Name </th>
+                <th> Category </th>
+                <th> Product Price </th>
+                <th> Action </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let product of products">
+                <td style="width: 150px;"> 
+                    <img [src]="product.imgUrl" style="max-width: 140px; height: 100px;" alt="Product Image">
+                </td>
+                <td> {{ product.id }} </td>
+                <td> {{ product.productName }} </td>
+                <td> {{ product.category }} </td>
+                <td> {{ product.price }} </td>
+                <td>
+                    <button class="btn btn-primary" (click)="deleteProduct(product)" >Delete</button>
+                    <button class="btn btn-warning" (click)="editProduct(product)" >Edit</button>
+
+                    
+                </td>
+            </tr>
+        </tbody>
+       
+    </table>
+</div>
+
+
+
+
+ 

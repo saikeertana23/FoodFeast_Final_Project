@@ -1,0 +1,47 @@
+.container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+}
+
+.login-box {
+    margin-top: 100px;
+    width: 350px;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    align-items: center; 
+    justify-content: center;
+    margin-bottom: 20px; 
+}
+
+.form-title {
+    text-align: center;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.glyphicon {
+    margin-top: 9px;
+    margin-right: 5px;
+    font-size: 15px;
+}
+
+button {
+    width: 80px;
+}
+
+.already_user, .forgot_password {
+    text-align: center;
+}
+
+
+.custom-navbar {
+    background-image: url('https://rayalaseemaruchulu.com/assets/images/cream-background.jpg'); /* Replace 'path/to/your/image.jpg' with the actual path to your image */
+    background-size: cover; /* This will ensure that the background image covers the entire navbar */
+    background-repeat: no-repeat; /* This will prevent the image from repeating */
+}

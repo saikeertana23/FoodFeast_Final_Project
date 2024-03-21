@@ -1,0 +1,240 @@
+
+
+ <!-- <nav class="navbar navbar-expand-lg navbar-light bg-dark" style="min-height: 80px;">  -->
+  <!-- <nav class="navbar navbar-expand-lg navbar-light bg-info"> -->
+
+    <nav class="navbar navbar-expand-md navbar-white nav-width custom-navbar">
+    <div class="container-lg">
+        <a class="navbar-brand" href="#">
+            <img src="assets/images/foodfeast2.png" alt="Your Logo" height="80" width="120">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="">Home</a>
+                </li>
+               
+            </ul>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/login">Login</a>
+                </li>
+               
+               
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+
+<!-- <div class="container">
+  <div class="reg-box">
+    <h1 align="center">Registration</h1>
+    <br>
+<form #regForm="ngForm" (ngSubmit)="registerUser(regForm.value)" novalidate>
+      <div class="row" style="margin-bottom: 15px;">
+        <div class="col-md-12">
+          <div class="form-group">
+            <input type="text" id="user_name" name="username" ngModel #username="ngModel" required class="form-control" placeholder="Enter your Name" />
+            <div *ngIf="username.invalid && (username.dirty || username.touched)" class="text-danger" style="margin-top: 5px; text-align: center;">
+              <div *ngIf="username.errors?.['required']">Name is required.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+<div class="row" style="margin-bottom: 15px;">
+        <div class="col-md-12">
+          <div class="form-group">
+            <input type="tel" id="mobile_number" name="mobile_number" ngModel #mobile_number="ngModel" required pattern="[0-9]{10}" class="form-control" placeholder="10 digit Mobile Number" />
+            <div *ngIf="mobile_number.invalid && (mobile_number.dirty || mobile_number.touched)" class="text-danger" style="margin-top: 5px; text-align: center;">
+              <div *ngIf="mobile_number.errors?.['required']">Mobile Number is required.</div>
+              <div *ngIf="mobile_number.errors?.['pattern']">Enter a valid 10-digit Mobile Number.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+<div class="row" style="margin-bottom: 15px;">
+        <div class="col-md-12">
+          <div class="form-group">
+            <input type="email" id="email_id" name="email_id" ngModel #email_id="ngModel" required email class="form-control" placeholder="Enter your email" />
+            <div *ngIf="email_id.invalid && (email_id.dirty || email_id.touched)" class="text-danger" style="margin-top: 5px; text-align: center;">
+              <div *ngIf="email_id.errors?.['required']">Email is required.</div>
+              <div *ngIf="email_id.errors?.['email']">Enter a valid email address.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+<div class="row" style="margin-bottom: 15px;">
+        <div class="col-md-12">
+          <div class="form-group">
+            <input type="password" id="password" name="password" ngModel #password="ngModel" required minlength="6" class="form-control" placeholder="Enter your password" />
+            <div *ngIf="password.invalid && (password.dirty || password.touched)" class="text-danger" style="margin-top: 5px; text-align: center;">
+              <div *ngIf="password.errors?.['required']">Password is required.</div>
+              <div *ngIf="password.errors?.['minlength']">Password must be at least 6 characters long.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+<button type="submit" class="btn btn-primary" style="margin-top: 10px;">Register</button>
+      <div class="already_user">
+        <span>Already a user ?</span>
+        <a href="/login" >Sign in</a>
+      </div>
+    </form>
+  </div>
+</div> -->
+
+
+
+<div class="container">
+  <div class="reg-box">
+    <h1 align="center">Registration</h1>
+    <br>
+
+    <form #regForm="ngForm" (ngSubmit)="registerUser(regForm.value)" novalidate>
+      <div class="row" style="margin-bottom: 15px;">
+        <div class="col-md-12">
+          <div class="form-group">
+            <input type="text" id="user_name" name="username" ngModel #username="ngModel" required class="form-control" placeholder="Enter your Name" />
+            <div *ngIf="username.invalid && (username.dirty || username.touched)" class="text-danger" style="margin-top: 5px; text-align: center;">
+              <div *ngIf="username.errors?.['required']">Name is required.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row" style="margin-bottom: 15px;">
+        <div class="col-md-12">
+          <div class="form-group">
+            <input type="tel" id="mobile_number" name="mobile_number" ngModel #mobile_number="ngModel" required pattern="[0-9]{10}" class="form-control" placeholder="10 digit Mobile Number" />
+            <div *ngIf="mobile_number.invalid && (mobile_number.dirty || mobile_number.touched)" class="text-danger" style="margin-top: 5px; text-align: center;">
+              <div *ngIf="mobile_number.errors?.['required']">Mobile Number is required.</div>
+              <div *ngIf="mobile_number.errors?.['pattern']">Enter a valid 10-digit Mobile Number.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row" style="margin-bottom: 15px;">
+        <div class="col-md-12">
+          <div class="form-group">
+            <input type="email" id="email_id" name="email_id" ngModel #email_id="ngModel" required email class="form-control" placeholder="Enter your email" />
+            <div *ngIf="email_id.invalid && (email_id.dirty || email_id.touched)" class="text-danger" style="margin-top: 5px; text-align: center;">
+              <div *ngIf="email_id.errors?.['required']">Email is required.</div>
+              <div *ngIf="email_id.errors?.['email']">Enter a valid email address.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row" style="margin-bottom: 15px;">
+        <div class="col-md-12">
+          <div class="form-group">
+            <input type="password" id="password" name="password" ngModel #password="ngModel" required minlength="6" class="form-control" placeholder="Enter your password" />
+            <div *ngIf="password.invalid && (password.dirty || password.touched)" class="text-danger" style="margin-top: 5px; text-align: center;">
+              <div *ngIf="password.errors?.['required']">Password is required.</div>
+              <div *ngIf="password.errors?.['minlength']">Password must be at least 6 characters long.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row" style="margin-bottom: 15px;">
+        <div class="col-md-12">
+          <div class="form-group">
+            <input type="password" id="confirmPassword" name="confirmPassword" ngModel #confirmPassword="ngModel" required class="form-control" placeholder="Confirm your password" />
+            <div *ngIf="confirmPassword.invalid && (confirmPassword.dirty || confirmPassword.touched)" class="text-danger" style="margin-top: 5px; text-align: center;">
+              <div *ngIf="confirmPassword.errors?.['required']">Confirm password is required.</div>
+              <div *ngIf="password.value && confirmPassword.value && password.value !== confirmPassword.value">Passwords do not match.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button type="submit" class="btn btn-primary" style="margin-top: 10px;">Register</button>
+      <div class="already_user">
+        <span>Already a user ?</span>
+        <a href="/login">Sign in</a>
+      </div>
+    </form>
+  </div>
+</div>
+
+
+<!-- <div class="container">
+  <div class="reg-box">
+    <h1 align="center">Registration</h1>
+    <br>
+
+    <form #regForm="ngForm" (ngSubmit)="registerUser(regForm)" novalidate>
+      <div class="row" style="margin-bottom: 15px;">
+        <div class="col-md-12">
+          <div class="form-group">
+            <input type="text" id="user_name" name="username" ngModel #username="ngModel" required class="form-control" placeholder="Enter your Name" />
+            <div *ngIf="username.invalid && (username.dirty || username.touched)" class="text-danger" style="margin-top: 5px; text-align: center;">
+              <div *ngIf="username.errors?.['required']">Name is required.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row" style="margin-bottom: 15px;">
+        <div class="col-md-12">
+          <div class="form-group">
+            <input type="tel" id="mobile_number" name="mobile_number" ngModel #mobile_number="ngModel" required pattern="[0-9]{10}" class="form-control" placeholder="10 digit Mobile Number" />
+            <div *ngIf="mobile_number.invalid && (mobile_number.dirty || mobile_number.touched)" class="text-danger" style="margin-top: 5px; text-align: center;">
+              <div *ngIf="mobile_number.errors?.['required']">Mobile Number is required.</div>
+              <div *ngIf="mobile_number.errors?.['pattern']">Enter a valid 10-digit Mobile Number.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row" style="margin-bottom: 15px;">
+        <div class="col-md-12">
+          <div class="form-group">
+            <input type="email" id="email_id" name="email_id" ngModel #email_id="ngModel" required email pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" class="form-control" placeholder="Enter your email" />
+            <div *ngIf="email_id.invalid && (email_id.dirty || email_id.touched)" class="text-danger" style="margin-top: 5px; text-align: center;">
+              <div *ngIf="email_id.errors?.['required']">Email is required.</div>
+              <div *ngIf="email_id.errors?.['email']">Enter a valid email address.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row" style="margin-bottom: 15px;">
+        <div class="col-md-12">
+          <div class="form-group">
+            <input type="password" id="password" name="password" ngModel #password="ngModel" required minlength="6" class="form-control" placeholder="Enter your password" />
+            <div *ngIf="password.invalid && (password.dirty || password.touched)" class="text-danger" style="margin-top: 5px; text-align: center;">
+              <div *ngIf="password.errors?.['required']">Password is required.</div>
+              <div *ngIf="password.errors?.['minlength']">Password must be at least 6 characters long.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row" style="margin-bottom: 15px;">
+        <div class="col-md-12">
+          <div class="form-group">
+            <input type="password" id="confirmPassword" name="confirmPassword" ngModel #confirmPassword="ngModel" required class="form-control" placeholder="Confirm your password" />
+            <div *ngIf="confirmPassword.invalid && confirmPassword.touched" class="text-danger" style="margin-top: 5px; text-align: center;">
+              <div *ngIf="confirmPassword.errors?.['required'] && confirmPassword.touched">Confirm password is required.</div>
+              <div *ngIf="regForm.controls['password'].value !== regForm.controls['confirmPassword'].value && regForm.controls['confirmPassword'].touched">Passwords do not match.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <button type="submit" class="btn btn-primary" style="margin-top: 10px;">Register</button>
+      <div class="already_user">
+        <span>Already a user ?</span>
+        <a href="/login">Sign in</a>
+      </div>
+    </form>
+  </div>
+</div> -->

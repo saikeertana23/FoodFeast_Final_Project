@@ -1,0 +1,22 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+.reg-box {
+
+    width: 350px;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    align-items: center; 
+    justify-content: center;
+    margin-top: 250px;
+}
+.custom-navbar {
+    background-image: url('https://rayalaseemaruchulu.com/assets/images/cream-background.jpg'); /* Replace 'path/to/your/image.jpg' with the actual path to your image */
+    background-size: cover; /* This will ensure that the background image covers the entire navbar */
+    background-repeat: no-repeat; /* This will prevent the image from repeating */
+}
+
