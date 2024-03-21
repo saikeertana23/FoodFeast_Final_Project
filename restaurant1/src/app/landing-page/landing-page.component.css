@@ -1,0 +1,185 @@
+.custom-navbar {
+    background-image: url('https://rayalaseemaruchulu.com/assets/images/cream-background.jpg'); /* Replace 'path/to/your/image.jpg' with the actual path to your image */
+    background-size: cover; /* This will ensure that the background image covers the entire navbar */
+    background-repeat: no-repeat; /* This will prevent the image from repeating */
+}
+/* .background-container {
+    position: relative;
+    display: flex;
+  }
+
+  .foreground-image {
+    position: absolute;
+    top: 20%;
+    left: 85%;
+    right: 0; 
+    transform: translateY(-50%);
+  
+    z-index: 1; 
+  }
+
+    .background-container {
+        position: relative;
+      }
+      
+      .background-image {
+        width: 100%;
+        height: auto; 
+      }
+      
+      .content-overlay {
+        position: absolute;
+        top:10%; 
+        left: 50%; 
+        transform: translate(-50%, -50%);
+        text-align: center; 
+        color: white; 
+        z-index: 1; 
+      }
+      
+      .content-overlay h2 {
+        font-size: 40px;
+        font-family: 'Cinzel', serif;
+       
+        color: black;
+      }
+      
+      .content-overlay img {
+        width: 300px; 
+        height: auto; 
+        margin-right: 700px;
+        margin-top: 20px;
+      }
+      
+
+
+
+
+
+
+
+      .background-container {
+        position: relative;
+      }
+      
+      .content-overlay {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        z-index: 1;
+        text-align: center;
+      }
+      
+      .content-overlay h2 {
+        font-size: 40px;
+       
+      }
+      
+      .content-wrapper {
+        display: flex;
+        align-items: center;
+      }
+      
+      .content-image {
+        margin-top: 800px;
+        width: 300px;
+        margin-right: 20px; 
+        float: left;
+        position: absolute;
+        top: 0%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        z-index: 1;
+        text-align: center;
+      }
+      
+      .food-text {
+        
+        max-width: 400px;
+        margin-left: 450px; 
+        color: black;
+       
+      
+        font-family: 'Times New Roman', Times, serif;
+      } */
+      
+/* .content-image{
+    float: left;
+        position: absolute;
+       top: 50%;
+       margin-top: 700px;
+       height: 350px;
+       width: 250px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        z-index: 1;
+        text-align: center;
+}
+.food-h2{
+    
+    color: black;
+} */
+
+
+.background-container {
+    position: relative;
+    height: 600px;
+
+}
+
+.background-image {
+    width: 100%;
+    height: auto;
+}
+
+.content-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    z-index: 1;
+    text-align: center;
+    display: flex; 
+    align-items: center;
+}
+
+.content-image {
+  
+    margin-right: 20px; 
+    width: 600px;
+    height: 500px;
+}
+
+.food-text {
+    max-width: 600px;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: left; /* Align text to the left */
+    font-size: 16px;
+}
+
+.food-h2 {
+    color: black;
+
+}
+p{
+    height: 100px;
+}
+
+
+.carousel-image{
+    margin-top: 100px;
+    height: 500px;
+    width: 100%;
+}
+
+    
+
+     
+
+     

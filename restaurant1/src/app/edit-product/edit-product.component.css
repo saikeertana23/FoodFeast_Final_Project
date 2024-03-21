@@ -1,0 +1,45 @@
+.container {
+    max-width: 500px; /* Adjust the max-width according to your layout */
+    margin: auto; /* Center the container horizontally */
+    padding: 20px; /* Add some padding around the container */
+  }
+  
+  .form-group {
+    margin-bottom: 20px; /* Add space between form groups */
+  }
+  
+  label {
+    font-weight: bold; /* Make labels bold */
+  }
+  
+  input[type="text"],
+  input[type="number"],
+  textarea {
+    width: 100%; /* Make inputs fill the container width */
+    padding: 10px; /* Add padding to inputs */
+    border: 1px solid #ccc; /* Add a border */
+    border-radius: 5px; /* Add rounded corners */
+  }
+  
+  textarea {
+    height: 100px; /* Set a fixed height for textareas */
+  }
+  
+  button[type="submit"] {
+    padding: 10px 20px; /* Add padding to the submit button */
+    background-color: #007bff; /* Set button background color */
+    color: #fff; /* Set text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Add rounded corners */
+    cursor: pointer; /* Add cursor pointer on hover */
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #0056b3; /* Darken button color on hover */
+  }
+  .custom-navbar {
+    background-image: url('https://rayalaseemaruchulu.com/assets/images/cream-background.jpg'); /* Replace 'path/to/your/image.jpg' with the actual path to your image */
+    background-size: cover; /* This will ensure that the background image covers the entire navbar */
+    background-repeat: no-repeat; /* This will prevent the image from repeating */
+}
+  
